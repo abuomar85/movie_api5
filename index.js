@@ -19,7 +19,7 @@ const express = require('express'),
       app.use(morgan('common'));
       app.use(bodyParser.json());
 
-      mongoose.connect('mongodb+srv://abuomaralyabrode85:Abu.0796422917@cluster0.usnlqqf.mongodb.net/movieDB2?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+      mongoose.connect('mongodb+srv://abuomaralyabrode85:Abu.0796422917@cluster0.usnlqqf.mongodb.net/moviesDB2?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 //the main page of app
 app.get('/' ,(req, res) => {
