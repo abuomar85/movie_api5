@@ -49,9 +49,11 @@ app.get('/movies', passport.authenticate('jwt', {session: false}), async(req, re
 });
 // get the documentation file
 app.use(express.static('public'));
+app.use(express.static('Public'));
 app.get('/documentation', (req, res) => {
-  res.sendFile('documentation.html', {root: __dirname})
+  res.sendFile('Public/documentation.html', {root: __dirname})
 });
+
 
 
 // Get the data about a single movie by name 
