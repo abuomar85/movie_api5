@@ -49,7 +49,7 @@ app.get('/movies', passport.authenticate('jwt', {session: false}), async(req, re
 });
 // get the documentation file
 app.get('/documentation', (req, res) => {
-  res.sendFile('public/documentation.html', {root: __dirname})
+  res.sendFile('documentation.html', {root: __dirname})
 });
 app.use(express.static('public'));
 
